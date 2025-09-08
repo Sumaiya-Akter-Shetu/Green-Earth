@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green-Earth</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-        @import 'tailwindcss';
-        @theme{
-            --font-inter: "Inter", sans-serif;
-            --font-hind-madurai: "Hind Madurai", sans-serif;
-            --font-roboto: "Roboto", sans-serif;
-        }
-        </style>
+    <link rel="stylesheet" href="">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 </head>
 <body>
 <header>
     <!-- navbar section -->
-    <nav>
-        <div>Green Earth</div>
+    <nav class="flex justify-around items-center bg-[#15803D] mx-auto h-[60px] max-w-[1280px]">
+        <div class="text-[#FFFFFF] text-[20px] font-[130px]">Green Earth</div>
         <div>
-            <ul>
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Plant a Tree</li>
+            <ul class="flex gap-8 text-[12px] text-[#FFFFFF]">
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+               <li><a href="">Plant a Tree</a></li>
             </ul>
         </div>
-        <button>Plant a Tree</button>
+        <button class="bg-[#FACC15] text-[11px] p-2 rounded-[16px] text-[#15803D]">Plant a Tree</button>
     </nav>
 </header>
 <main>
     <!-- banner section -->
     <section>
-        <img src="" alt="">
-        <div>
-
+        <div class="flex justify-around items-center gap-5 bg-[#CFF0DC] h-[320px] mx-auto max-w-[1280px]">
+            <img class=" h-[320px] w-[400px]"  src="assets/hero-leaf1.png" alt="">
+        <div class="items-center text-center border-blue-500">
+            <h1 class="text-3xl font-bold mb-3">Plant a Tree, Grow a Future</h1>
+            <p class="text-[10px] mb-3">Join our mission to plant 1 million trees and make the Earth greener for  future <br>
+generations.</p>
+            <button class="bg-[#FACC15] text-[11px] p-2 rounded-[16px] text-[#15803D]">Get Involved</button>
         </div>
-        <img src="" alt="">
+        <img class="h-[320px] w-[400px]" src="assets/hero-leaf2.png" alt="">
+        </div>
     </section>
 
 </main>
+<script src="script.js"></script>
 </body>
 </html>
