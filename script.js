@@ -35,7 +35,7 @@ async function fetchCategories() {
     categoryList.appendChild(allBtn);
 
     // Other categories from API
-    data.categories.forEach(cat => {
+    data.data.forEach(cat => {
       const btn = document.createElement("button");
       btn.textContent = cat.category;
       btn.className = "px-3 py-1 rounded mb-2 w-full hover:bg-green-100";
@@ -79,7 +79,7 @@ async function fetchProductsByCategory(id) {
     showSpinner();
     const res = await fetch(`https://openapi.programming-hero.com/api/categories/${id}`);
     const data = await res.json();
-    renderProducts(data.data);   // কারণ API response এ data.data থাকে
+    renderProducts(data.categories);
   } catch (err) {
     console.error("Error fetching category products:", err);
   }
