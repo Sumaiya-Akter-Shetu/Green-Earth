@@ -77,13 +77,14 @@ async function fetchProducts() {
 async function fetchProductsByCategory(id) {
   try {
     showSpinner();
-    const res = await fetch(`https://openapi.programming-hero.com/api/category/${id}`);
+    const res = await fetch(`https://openapi.programming-hero.com/api/categories/${id}`);
     const data = await res.json();
-    renderProducts(data.plants);
+    renderProducts(data.data);   // কারণ API response এ data.data থাকে
   } catch (err) {
     console.error("Error fetching category products:", err);
   }
 }
+
 
 //  Render Products with 9 initially + Load More
 function renderProducts(plants) {
